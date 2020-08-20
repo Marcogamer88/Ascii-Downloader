@@ -15,7 +15,7 @@ def download_ascii():
                                  params=payload)
         text_response = ascii_art.text
     else:
-        text_response = "Aggiungi una parola o una frase!"
+        text_response = "Add a word or a phrase"
 
     textwidget = tk.Text()
     textwidget.insert(tk.END, text_response)
@@ -27,7 +27,7 @@ def download_ascii():
 
 
 welcome_label = tk.Label(window,
-                         text="Benvenuto! Aggiungi una parola o una frase da scaricare:",
+                         text="Welcome! Add a word or a phrase to download:",
                          font=("Helvetica", 15))
 welcome_label.grid(row=0, column=0, sticky="N", padx=20, pady=10)
 
@@ -35,7 +35,7 @@ welcome_label.grid(row=0, column=0, sticky="N", padx=20, pady=10)
 text_input = tk.Entry()
 text_input.grid(row=1, column=0, sticky="WE", padx=10)
 
-download_button = tk.Button(text="Clicca qui per scaricare il tuo ASCII", command=download_ascii)
+download_button = tk.Button(text="Click here to download your ASCII Text", command=download_ascii)
 download_button.grid(row=2, column=0, sticky="WE", pady=10, padx=10)
 
 
