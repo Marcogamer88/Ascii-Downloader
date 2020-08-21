@@ -21,7 +21,7 @@ def download_ascii():
     textwidget.insert(tk.END, text_response)
     textwidget.grid(row=3, column=0, sticky="WE", padx=10, pady=10)
 
-    credits_label = tk.Label(window, text="Created by Marco, ASCII Art Powered by artii.herokuapp.com")
+    credits_label = tk.Label(window, text="Created by Marco, Code by PyMike ASCII Art Powered by artii.herokuapp.com")
     credits_label.grid(row=4, column=0, sticky="S", pady=10)
 
 
